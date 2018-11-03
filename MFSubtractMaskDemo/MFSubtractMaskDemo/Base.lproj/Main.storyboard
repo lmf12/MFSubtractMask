@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Vr-fhG">
+                                <rect key="frame" x="37" y="263.5" width="300" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7lK-GN-KfS"/>
+                                    <constraint firstAttribute="height" constant="160" id="UMh-Bo-Psv"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Dbc-6n-zyD"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-ms-9Ln">
+                                <rect key="frame" x="67" y="279.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BFt-ee-k8F"/>
+                                    <constraint firstAttribute="height" constant="128" id="xEZ-fG-2N7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-5X-rny">
+                                <rect key="frame" x="156.5" y="573" width="62" height="30"/>
+                                <state key="normal" title="镂空图案"/>
+                                <connections>
+                                    <action selector="actionImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5CE-pI-p1d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-Fe-8My">
+                                <rect key="frame" x="250.5" y="573" width="62" height="30"/>
+                                <state key="normal" title="镂空文字"/>
+                                <connections>
+                                    <action selector="actionText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qaA-wn-C8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhX-fz-ag6">
+                                <rect key="frame" x="63" y="573" width="62" height="30"/>
+                                <state key="normal" title="放大还原"/>
+                                <connections>
+                                    <action selector="actionScale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cD5-Q8-Pkr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7g8-ms-9Ln" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8oK-fc-a3c"/>
+                            <constraint firstItem="uVx-Vr-fhG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="D45-k3-yW1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BK0-5X-rny" secondAttribute="bottom" constant="64" id="Omx-BR-e6k"/>
+                            <constraint firstItem="uVx-Vr-fhG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XX7-hv-612"/>
+                            <constraint firstItem="zhX-fz-ag6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="dt8-Hw-t4Q"/>
+                            <constraint firstItem="BK0-5X-rny" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eL9-Fc-Ayp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zhX-fz-ag6" secondAttribute="bottom" constant="64" id="kgS-i6-8BX"/>
+                            <constraint firstItem="7g8-ms-9Ln" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pto-H6-TlT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ErP-Fe-8My" secondAttribute="bottom" constant="64" id="rn5-YD-geQ"/>
+                            <constraint firstItem="ErP-Fe-8My" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="wkq-eM-q3w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="blackView" destination="7g8-ms-9Ln" id="c7r-h1-R0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpg" width="600" height="320"/>
+    </resources>
+</document>
