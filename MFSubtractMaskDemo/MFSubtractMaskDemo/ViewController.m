@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.visualEffectContainer.hidden = YES;
 }
 
 - (IBAction)actionScale:(id)sender {
