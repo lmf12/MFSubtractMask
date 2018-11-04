@@ -16,6 +16,7 @@
 		E8E4991C218DC992003F7DD2 /* UIView+MFSubtractMask.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4991B218DC992003F7DD2 /* UIView+MFSubtractMask.m */; };
 		E8E4991E218DDACA003F7DD2 /* pikaqiu.png in Resources */ = {isa = PBXBuildFile; fileRef = E8E4991D218DDACA003F7DD2 /* pikaqiu.png */; };
 		E8E49920218DDE07003F7DD2 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4991F218DDE06003F7DD2 /* background.jpg */; };
+		E8E49924218EACF9003F7DD2 /* color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E49923218EACF9003F7DD2 /* color.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E8E4991B218DC992003F7DD2 /* UIView+MFSubtractMask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MFSubtractMask.m"; sourceTree = "<group>"; };
 		E8E4991D218DDACA003F7DD2 /* pikaqiu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pikaqiu.png; sourceTree = "<group>"; };
 		E8E4991F218DDE06003F7DD2 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		E8E49923218EACF9003F7DD2 /* color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = color.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		E8E49902218DC80D003F7DD2 /* MFSubtractMaskDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E8E49923218EACF9003F7DD2 /* color.jpg */,
 				E8E4991F218DDE06003F7DD2 /* background.jpg */,
 				E8E4991D218DDACA003F7DD2 /* pikaqiu.png */,
 				E8E49903218DC80D003F7DD2 /* AppDelegate.h */,
@@ -152,6 +155,7 @@
 				E8E49910218DC80D003F7DD2 /* LaunchScreen.storyboard in Resources */,
 				E8E49920218DDE07003F7DD2 /* background.jpg in Resources */,
 				E8E4990D218DC80D003F7DD2 /* Assets.xcassets in Resources */,
+				E8E49924218EACF9003F7DD2 /* color.jpg in Resources */,
 				E8E4991E218DDACA003F7DD2 /* pikaqiu.png in Resources */,
 				E8E4990B218DC80D003F7DD2 /* Main.storyboard in Resources */,
 			);
