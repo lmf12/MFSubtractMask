@@ -18,7 +18,7 @@
                           view.frame.origin.x,
                           view.frame.origin.y);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     // 获取相反的遮罩图

@@ -26,18 +26,29 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="jbQ-hR-aU3"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-u1-te4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-kG-qFv">
                                 <rect key="frame" x="67" y="73" width="240" height="128"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q7V-Xb-71J">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-u1-te4">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q7V-Xb-71J">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="XRs-eu-dWF"/>
+                                            <constraint firstAttribute="height" constant="128" id="wBl-DH-6KS"/>
+                                        </constraints>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="XRs-eu-dWF"/>
-                                    <constraint firstAttribute="height" constant="128" id="wBl-DH-6KS"/>
+                                    <constraint firstAttribute="height" constant="128" id="PTo-k9-juW"/>
+                                    <constraint firstItem="bLe-u1-te4" firstAttribute="centerX" secondItem="6gj-kG-qFv" secondAttribute="centerX" id="VU7-GC-PPY"/>
+                                    <constraint firstAttribute="width" constant="240" id="Xex-ca-871"/>
+                                    <constraint firstItem="bLe-u1-te4" firstAttribute="centerY" secondItem="6gj-kG-qFv" secondAttribute="centerY" id="l4R-pa-Cs4"/>
                                 </constraints>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Vr-fhG">
                                 <rect key="frame" x="37" y="263" width="300" height="160"/>
                                 <constraints>
@@ -82,9 +93,9 @@
                             <constraint firstItem="uVx-Vr-fhG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="D45-k3-yW1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BK0-5X-rny" secondAttribute="bottom" constant="64" id="Omx-BR-e6k"/>
                             <constraint firstItem="7g8-ms-9Ln" firstAttribute="centerY" secondItem="uVx-Vr-fhG" secondAttribute="centerY" id="TgZ-sm-YpC"/>
-                            <constraint firstItem="bLe-u1-te4" firstAttribute="centerY" secondItem="uuY-LP-DoV" secondAttribute="centerY" id="V7u-X3-T8t"/>
-                            <constraint firstItem="bLe-u1-te4" firstAttribute="centerX" secondItem="uuY-LP-DoV" secondAttribute="centerX" id="Wik-SC-oHF"/>
+                            <constraint firstItem="6gj-kG-qFv" firstAttribute="centerX" secondItem="uuY-LP-DoV" secondAttribute="centerX" id="XNB-f1-0W7"/>
                             <constraint firstItem="uVx-Vr-fhG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XX7-hv-612"/>
+                            <constraint firstItem="6gj-kG-qFv" firstAttribute="centerY" secondItem="uuY-LP-DoV" secondAttribute="centerY" id="bOd-7b-jql"/>
                             <constraint firstItem="zhX-fz-ag6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="dt8-Hw-t4Q"/>
                             <constraint firstItem="BK0-5X-rny" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eL9-Fc-Ayp"/>
                             <constraint firstItem="7g8-ms-9Ln" firstAttribute="centerX" secondItem="uVx-Vr-fhG" secondAttribute="centerX" id="heo-Wp-SVr"/>
@@ -97,7 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="blackView" destination="7g8-ms-9Ln" id="c7r-h1-R0f"/>
-                        <outlet property="visualEffectView" destination="bLe-u1-te4" id="G9E-q2-Gap"/>
+                        <outlet property="visualEffectContainer" destination="6gj-kG-qFv" id="ktG-dD-wmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

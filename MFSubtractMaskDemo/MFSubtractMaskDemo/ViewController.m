@@ -13,7 +13,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *blackView;
-@property (weak, nonatomic) IBOutlet UIVisualEffectView *visualEffectView;
+@property (weak, nonatomic) IBOutlet UIView *visualEffectContainer;
 
 @end
 
@@ -26,11 +26,11 @@
 - (IBAction)actionScale:(id)sender {
     [UIView animateWithDuration:0.5 animations:^{
         self.blackView.subtractMaskView.transform = CGAffineTransformMakeScale(2, 2);
-        self.visualEffectView.subtractMaskView.transform = CGAffineTransformMakeScale(2, 2);
+        self.visualEffectContainer.subtractMaskView.transform = CGAffineTransformMakeScale(2, 2);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.5 animations:^{
             self.blackView.subtractMaskView.transform = CGAffineTransformIdentity;
-            self.visualEffectView.subtractMaskView.transform = CGAffineTransformIdentity;
+            self.visualEffectContainer.subtractMaskView.transform = CGAffineTransformIdentity;
         }];
     }];
 }
@@ -40,7 +40,7 @@
     imageView.frame = CGRectMake(30, 20, 100, 95);
     
     self.blackView.subtractMaskView = imageView;
-    self.visualEffectView.subtractMaskView = imageView;
+    self.visualEffectContainer.subtractMaskView = imageView;
 }
 
 - (IBAction)actionText:(id)sender {
@@ -51,7 +51,7 @@
     label.text = @"MFSubtractMask";
     
     self.blackView.subtractMaskView = label;
-    self.visualEffectView.subtractMaskView = label;
+    self.visualEffectContainer.subtractMaskView = label;
 }
 
 @end
