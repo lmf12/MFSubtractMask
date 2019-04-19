@@ -6,8 +6,6 @@
 //  Copyright © 2018年 Lyman Li. All rights reserved.
 //
 
-#define ROUND_UP(N, S) ((((N) + (S) - 1) / (S)) * (S))
-
 #import "UIView+MFSubtractMask.h"
 
 @implementation UIView (MFSubtractMask)
@@ -43,7 +41,7 @@
     float width = CGImageGetWidth(originalMaskImage);
     float height = CGImageGetHeight(originalMaskImage);
     
-    int strideLength = ROUND_UP(width * 1, 4);
+    int strideLength = ceil(width);
     unsigned char * alphaData = calloc(strideLength * height, sizeof(unsigned char));
     CGContextRef alphaOnlyContext = CGBitmapContextCreate(alphaData,
                                                           width,
