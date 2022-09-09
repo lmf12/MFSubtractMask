@@ -3,10 +3,10 @@
 一种实现 `UIView` 镂空效果的方案，可以快速实现任意形状的镂空、文字的镂空、带镂空的毛玻璃效果等。本质上是 `UIView` 的 `maskView` 效果的「取反」。
 
 下面是最终实现的效果：
-![](https://raw.githubusercontent.com/lmf12/MFSubtractMask/master/readme-image/demo.jpg)
+![](https://lymanli-1258009115.cos.ap-guangzhou.myqcloud.com/image/github/MFSubtractMask/demo.jpg)
 
 可以很方便地生成毛玻璃的镂空效果:
-![](https://raw.githubusercontent.com/lmf12/MFSubtractMask/master/readme-image/effect.jpg)
+![](https://lymanli-1258009115.cos.ap-guangzhou.myqcloud.com/image/github/MFSubtractMask/effect.jpg)
 
 ## 如何导入
 
